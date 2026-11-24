@@ -1,0 +1,6 @@
+identity.config.json
+snapshots/
+latest.txt
+ALERT.txt
+last-check.txt
+restore-bak-*/

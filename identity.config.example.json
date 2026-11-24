@@ -1,0 +1,42 @@
+{
+  "root": "C:\\path\\to\\.dsh",
+  "snapshotDir": "./snapshots",
+  "coreFiles": [
+    "prompt-inject.md",
+    "rules/daily.md",
+    "rules/full.md",
+    "rules/daily.json",
+    "rules/full.json",
+    "rules/local-ai-routing.md",
+    "dsh-purge/override-state.json",
+    "profiles/desktop/cordis.patch.yml",
+    "memory/MEMORY.md"
+  ],
+  "watchPatterns": [
+    {
+      "glob": "**/*.js",
+      "contains": "[dsh-purge]"
+    },
+    {
+      "glob": "profiles/**/*.yml",
+      "contains": ""
+    }
+  ],
+  "excludeDirs": [
+    "node_modules",
+    ".git",
+    "cache",
+    ".cache",
+    "storages",
+    "sessions",
+    "logs",
+    "snapshots",
+    "attachments"
+  ],
+  "maxScanFiles": 20000,
+  "hostMeta": {
+    "packageJson": "D:/path/to/resources/app/package.json",
+    "modelYaml": "profiles/desktop/cordis.patch.yml"
+  },
+  "retainSnapshots": 20
+}
